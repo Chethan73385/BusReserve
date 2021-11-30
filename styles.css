@@ -1,0 +1,44 @@
+*{
+    font-family: Muli;
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 10px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+.topmenu{
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.topmenu>b{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.topmenu>button{
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ind{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+.ind>input{
+    height: 30px;
+    width: 50%;
+}

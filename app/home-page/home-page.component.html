@@ -1,0 +1,209 @@
+<main>
+    <head>
+        <style>
+          .button {
+            background-color: #009879;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 2px 2px;
+            cursor: pointer;
+          }
+          </style>
+      </head>
+     <!-- hero content -->
+     
+     <div class="hero">
+        <!-- content for the hero -->
+     <br>
+     <h1 class="hero-title" style="color: #009879;">Choose Your Journey</h1>
+     <br>
+     <br>
+     <br>
+     <select name="boarding" id="dsts"  class="custom-select" style="width: 210px; margin-left: 5px;"  (change)="handleEvent($event)" [(ngModel)]=search.boarding>
+        <option> Select Boarding  </option>
+        <option value="Ahmedabad" >Ahmedabad</option>
+        <option value="Mumbai" >Mumbai</option>
+        <option value="Goa" >Goa</option>
+    </select>
+    <select name="dropping" id="dsts"  class="custom-select" style="width: 210px; margin-left: 5px;"  (click)="handleClick()" placeholder="destination" [(ngModel)]=search.dropping>
+        <option> Select Dropping  </option>
+        <option value="Ahmedabad" >Ahmedabad</option>
+        <option value="Mumbai" >Mumbai</option>
+        <option value="Goa" >Goa</option>
+    </select>
+     <br>   
+        <br>
+        <input type="date" class="custom-select" style="width: 210px;" [(ngModel)]=journeyDate>
+        <br>
+    
+    <br><br>
+   
+    <button class="button" (click)="show()"  >Confirm Details</button>
+    <br>
+    <br><br>
+<br>
+    <div *ngIf="!showf" id="continue-login">
+    <div id="continue">
+        <button class="button" id="1" (click)="searchBusForAuthorised()">Bus For Prime Customers</button>
+        <button class="button" id="2" (click)="searchBusForUnauthorised()">Bus For Unsubscribed Customers </button>	
+    </div>
+    </div>
+     <div *ngIf="checkUser">
+    <div id="search-bus">
+        <hr>
+       <!-- <table  cellpadding=10 cellspacing=30 style="width:100%; ">-->
+           <br>
+           <br>
+<table class="styled-table">
+     <thead>
+          <tr >
+          <th>Bus Number</th>   
+          <th>Boarding</th> 
+          <th>Dropping</th> 
+          <th>StartTime</th> 
+          <th>EndTime</th> 
+          <th>Fare</th>
+          <th>TypeOfBus</th>
+          </tr>
+    </thead>
+    <tbody>
+          <tr *ngFor="let c of searchBus; let i=index">
+            <td>{{c.busNumber}}</td>
+            <td>{{c.boarding}}</td>
+            <td>{{c.dropping}}</td>
+            <td>{{c.startTime}}</td>
+            <td>{{c.endTime}}</td>
+            <td>{{c.fare}}</td>
+            <td>{{c.typeOfBus}}</td>
+            <td><button class="button" routerLink="/checkUserType"  (click)="showFun(c)" >SELECT BUS</button></td>
+        </tr>
+    </tbody>
+</table>
+        <hr>
+        </div>
+        </div>
+        </div>
+       
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<main>
+<p>home-page works!</p>
+<h1 class="hero-title">Choose Your Journey</h1>
+<form (ngSubmit)="show()">
+<select name="boarding" id="dsts"  class="custom-select" style="width: 210px; margin-left: 5px;"  [(ngModel)]="search.boarding">
+    <option> Select Boarding  </option>
+    <option value="Ahmedabad" >Ahmedabad</option>
+    <option value="Mumbai" >Mumbai</option>
+    <option value="Goa" >Goa</option>
+</select>
+<select name="dropping" id="dsts"  class="custom-select" style="width: 210px; margin-left: 5px;"  placeholder="destination" [(ngModel)]="search.dropping">
+    <option> Select Dropping  </option>
+    <option value="Ahmedabad" >Ahmedabad</option>
+    <option value="Mumbai" >Mumbai</option>
+    <option value="Goa" >Goa</option>
+</select>
+<select name="typeOfUser" id="auth"  class="custom-select" style="width: 210px; margin-left: 5px;" placeholder="User" [(ngModel)]="search.typeOfUser">
+    <option> Select User  </option>
+    <option value="Authorised" >Authorised</option>
+    <option value="Unauthorised" >Unauthorised</option>
+   
+</select>
+<br><br>
+<button type="submit" style="padding: 20px;"  >Search Bus</button>
+</form  >
+<div id="continue">
+    <button style="padding-left: 6%; padding-right: 6%;" (click)="searchBusForAuthorised()">Authorised</button><br>
+    <button (click)="searchBusForUnauthorised">Unauthorised</button>	
+</div>-->
+<!--<div id="search-bus">
+    <hr>
+    <table  cellpadding=10 cellspacing=30 style="width:100%; ">
+      <tr >
+      <th>Bus Number</th>   
+      <th>Boarding</th> 
+      <th>Dropping</th> 
+      <th>StartTime</th> 
+      <th>EndTime</th> 
+      <th>Fare</th>
+      <th>TypeOfBus</th>
+      </tr>
+      <tr *ngFor="let c of searchBus; let i=index">
+        <td>{{c.busNumber}}</td>
+        <td>{{c.boarding}}</td>
+        <td>{{c.dropping}}</td>
+        <td>{{c.startTime}}</td>
+        <td>{{c.endTime}}</td>
+        <td>{{c.fare}}</td>
+        <td>{{c.typeOfBus}}</td>
+        <td><button  style="background-color: darkorange;" (click)="showFun(c)" >SELECT BUS</button></td>
+       
+</tr>
+    </table>
+    <hr>
+    </div>
+</main>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

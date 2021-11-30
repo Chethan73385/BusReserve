@@ -1,0 +1,107 @@
+
+<html>
+  <head>
+    <title>For Adding BusType</title>
+    <style>
+        .button {
+          background-color: #009879;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 2px 2px;
+          cursor: pointer;
+         
+  
+        }
+        </style>
+  </head>
+
+  <body>
+    <br>
+    <button class="button" routerLink="/adminPage">Back</button> 
+    <br> 
+           <h3>Add BusRoute</h3>
+           
+           <form action="" method="">
+           
+            <table>
+               <tr>
+                   <td>RouteNo</td>
+                   <td>
+                       <input [(ngModel)]="busRoute.routeNo"  name="routeNo" type="text" placeholder="Enter RouteNo">
+                   </td>
+               </tr>
+               <tr>
+                  <td>BusNumber</td>
+                  <td>
+                     <input [(ngModel)]="busRoute.busNumber"  type="text" name="BusNumber" placeholder="Enter BusNumber">
+                  </td>
+               </tr>
+               <tr>
+                 <td>Boarding</td>
+                 <td>
+                  <input [(ngModel)]="busRoute.boarding" type="text" name="Boarding" placeholder="Enter Boarding">
+                 </td>
+               </tr>
+              
+               <tr>
+                 <td>Dropping</td>
+                 <td>
+                   <input [(ngModel)]="busRoute.dropping" type="text" name="Dropping" placeholder="Enter Dropping">
+                 </td>
+               </tr>
+               <tr>
+                <td>Distance</td>
+                <td>
+                  <input [(ngModel)]="busRoute.distance" type="text" name="Distance" placeholder="Enter Distance">
+                </td>
+              </tr>
+              <tr>
+                <td>StartTime</td>
+                <td>
+                  <input [(ngModel)]="busRoute.startTime" type="text" name="StartTime" placeholder="Enter StartTime">
+                </td>
+              </tr>
+              <tr>
+                <td>EndTime</td>
+                <td>
+                  <input [(ngModel)]="busRoute.endTime" type="text" name="EndTime" placeholder="Enter EndTime">
+                </td>
+              </tr>
+              <tr>
+                <td>Fare</td>
+                <td>
+                  <input [(ngModel)]="busRoute.fare" type="text" name="Fare" placeholder="Enter Fare">
+                </td>
+              </tr>
+              <tr>
+                <td>TotalSeats</td>
+                <td>
+                  <input [(ngModel)]="busRoute.totalSeats" type="text" name="TotalSeats" placeholder="Enter TotalSeats">
+                </td>
+              </tr>
+                <tr>
+                  <td>
+                    <button class="button" routerLink="/adminPage" (click)="addBusRoute()" cursor="" type="submit" >Submit</button> 
+                  </td>
+                </tr>
+                
+
+           </table>
+
+
+
+
+
+           </form>
+           
+    
+        
+  </body>
+ 
+
+</html>

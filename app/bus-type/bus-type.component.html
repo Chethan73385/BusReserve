@@ -1,0 +1,68 @@
+
+<html>
+  <head>
+    <title>For Adding BusType</title>
+    <style>
+        .button {
+          background-color: #009879;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 2px 2px;
+          cursor: pointer;
+         
+  
+        }
+        </style>
+  </head>
+
+  <body>
+    <br>
+    <button class="button" routerLink="/adminPage">Back</button> 
+    <br>    
+           <h3>Add BusType</h3>
+           
+           <form action="" method="">
+           
+            <table>
+               <tr>
+                   <td>Bus Number</td>
+                   <td>
+                       <input [(ngModel)]="busType.busNumber"  name="Name" type="text" placeholder="Enter BusNumber">
+                   </td>
+               </tr>
+               <tr>
+                  <td>TypeOfBus</td>
+                  <td>
+                     <input [(ngModel)]="busType.typeOfBus"  type="text" name="Email" placeholder="Enter TypeOfBus">
+                  </td>
+               </tr>
+               <tr>
+                 <td>BusStatus</td>
+                 <td>
+                  <input [(ngModel)]="busType.busStatus" type="text" name="busStatus" placeholder="Enter BusStatus">
+                 </td>
+               </tr>
+              
+               <tr>
+                 <td>Facilities</td>
+                 <td>
+                   <input [(ngModel)]="busType.facilities" type="text" name="facilities" placeholder="Enter Facilities">
+                 </td>
+               </tr>
+              
+                 
+                <tr>
+                  <td>
+                    <button class="button" routerLink="/adminPage" (click)="addbusType()" cursor="" type="submit" >Submit</button> 
+                  </td>
+                </tr>
+    </table>
+ </form>
+ </body>
+
+</html>

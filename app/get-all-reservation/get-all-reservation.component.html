@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .button {
+              background-color: #009879;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 12px;
+              margin: 2px 2px;
+              cursor: pointer;
+              
+      
+            }
+            </style>
+    </head>
+<br>
+<button class="button"  routerLink="/adminPage"  >Back</button><br>
+<br>
+<div class="container">
+    <table class="table table-bordered" *ngIf="myData && myData.length">
+        <thead>
+            <tr>
+                <th>Ticket Number </th>
+                <th>Booking Date </th>
+                <th>Journey Date </th>
+
+                <th>Seat Number </th>
+               
+                <th>Ticket Status </th>
+
+                <th>Cancel At  </th>
+                <th>Refund</th>
+                <th>Reschedule Date</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let res of myData">
+                    <td>{{ res.ticketNo }}</td>
+                    <td>{{ res.bookingDate}}</td>
+                    <td>{{ res.journeyDate}}</td>
+
+                    <td>{{ res.seatNo}}</td>
+                    
+                    <td>{{ res.ticketStatus}}</td>
+
+                    <td>{{ res.cancellationDate}}</td>
+                    <td>{{ res.refund}}</td>
+                    <td>{{ res.rescheduleDate}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

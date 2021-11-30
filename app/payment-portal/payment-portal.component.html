@@ -1,0 +1,159 @@
+<head>
+    <style>
+      .button {
+        background-color: #009879;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 2px;
+        cursor: pointer;
+      }
+      </style>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<button class="button" routerLink="/afterseatSelection">Back</button>
+<br>
+<br>
+<table class="w3-table w3-bordered w3-striped">
+ 
+  <tr class="w3-teal">
+
+<h1>Amount To Pay</h1>
+    <th><h1><span>&#8377;</span>{{fare}}</h1></th>
+    <th></th>
+  </tr>
+  <tr>
+    Card Number
+    <td>
+      <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+    </td> 
+  </tr>
+  <tr>
+    Expiry Date
+    <td>
+      <input type="text" class = "date-field" placeholder="mm">
+      <input type="text" class = "date-field" placeholder="yyyy">
+    </td>
+  </tr>
+  <tr>
+    CVC
+    <td>
+      <input type="password" class = "cvc-field" placeholder="xxx">
+    </td> 
+  </tr>
+  <tr>
+    Card Name Holder
+    <td>
+      <input type="text" class = "name-field" placeholder="Full Name">
+    </td>
+  </tr>
+  <button (click)="payment()" routerLink="/ticketPrinting"  class ="button" >Pay Now</button>
+                 
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <br>
+<button class="button" routerLink="/afterseatSelection">Back</button>
+<br>
+  <div class =  "middle-box" style="text-align: center;">
+    <p>Amount Pay To Company</p>
+    <h1><span>&#8377;</span>{{fare}}</h1>
+    
+    </div>
+  <table class="styled-table">
+  <thead>
+   
+    <tr>
+        <th>Pay Using Credit Or Debit Card</th>
+    </tr>
+    <tr>
+      Card Number
+      <td>
+        <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+      </td> 
+    </tr>
+    <tr>
+      Expiry Date
+      <td>
+        <input type="text" class = "date-field" placeholder="mm">
+        <input type="text" class = "date-field" placeholder="yyyy">
+      </td>
+    </tr>
+    <tr>
+      CVC
+      <td>
+        <input type="password" class = "cvc-field" placeholder="xxx">
+      </td> 
+    </tr>
+    <tr>
+      Card Name Holder
+      <td>
+        <input type="text" class = "name-field" placeholder="Full Name">
+      </td>
+    </tr>
+    <br>
+    <button routerLink="/ticketPrinting"  class ="button" >Pay Now</button>
+
+       
+   
+</thead>
+</table>
+-->
+
+<!--<div class="app-container">
+    <div class="top-box">  
+    </div>
+    <div class =  "middle-box">
+             <h1>Amount Pay To Company</h1>
+             <h1><span>&#8377;</span>{{fare}}</h1>
+    </div>
+    <div class = "bottom-box">
+        <br>
+        <div class="card-details">
+            <p>Pay using credit or debit card</p>
+                <label>Card Number <div style="width: 5px;"></div>
+                     <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+                </label>
+    <div class ="date-field-group">
+                 <label>Expiry Date</label><br>
+                     <input type="text" class = "date-field" placeholder="mm">
+                     <input type="text" class = "date-field" placeholder="yyyy">
+    </div>
+    <div class ="cvc-field-group">
+                <label>CVC</label><br>
+                    <input type="password" class = "cvc-field" placeholder="xxx">
+    </div>
+    <div class ="name-field-group">
+               <label>Card Name Holder</label><br>
+                    <input type="text" class = "name-field" placeholder="Full Name">
+    </div>
+    <br>
+            <button class ="button" >Pay Now</button>
+    </div>
+    </div>
+    </div>-->

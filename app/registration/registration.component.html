@@ -1,0 +1,78 @@
+
+<html>
+  <head>
+    <title>Register Form</title>
+  </head>
+
+  <body>
+     
+           <h3>Sign Up</h3>
+           
+           <form action="" method="">
+           
+            <table>
+               <tr>
+                   <td>Full Name:</td>
+                   <td>
+                       <input [(ngModel)]="userRegistration.regName"  name="Name" type="text" placeholder="Enter Name">
+                   </td>
+               </tr>
+               <tr>
+                  <td>Email:</td>
+                  <td>
+                     <input [(ngModel)]="userRegistration.regEmail"  type="text" name="Email" placeholder="Enter Email">
+                  </td>
+               </tr>
+               <tr>
+                 <td>Password:</td>
+                 <td>
+                  <input [(ngModel)]="userRegistration.password" type="password" name="password">
+                 </td>
+               </tr>
+               <tr>
+                 <td>Gender:</td>
+                 <td>
+                   <input [(ngModel)]="userRegistration.gender" value="M" checked="" type="radio" name="gender" >Male
+                   <input [(ngModel)]="userRegistration.gender" value="F" checked="" type="radio" name="gender" >Female
+                   
+                 </td>
+               </tr>
+               <tr>
+                 <td>BirthDate:</td>
+                 <td>
+                   <input [(ngModel)]="userRegistration.dateOfBirth" type="date" name="date">
+                 </td>
+               </tr>
+               <tr>
+                 <td>Phone:</td>
+                 <td>
+                  <input [(ngModel)]="userRegistration.regPhone" type="number" name="phone" placeholder="Enter Phone">
+                 </td>
+                </tr>
+                <tr>
+                  <td>Wallet</td>
+                  <td>
+                   <input [(ngModel)]="userRegistration.wallet" type="number" name="waller" placeholder="Wallet Amount">
+                  </td>
+                 </tr>
+                <tr>
+                  <td>
+                    <button (click)="onRegisterClick()" cursor="" type="submit" >Submit</button> 
+                  </td>
+                </tr>
+                
+
+           </table>
+
+
+
+
+
+           </form>
+           
+    
+        
+  </body>
+  <router-outlet></router-outlet>
+
+</html>

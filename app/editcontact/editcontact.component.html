@@ -1,0 +1,20 @@
+<h1>Edit Contact</h1>
+<div class="container">
+<form #contactForm="ngForm" (ngSubmit)="submitContact(contactForm)">
+    <table>
+        <tr>
+            <td>First Name</td><td><input type="text" name="fname" [(ngModel)]="contact.fname" required></td>
+        </tr>
+        <tr>
+            <td>Last Name</td><td><input type="text" name="lname" [(ngModel)]="contact.lname" required></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td><td><input type="number" name="phone" [(ngModel)]="contact.phone" required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Save" [disabled]="!contactForm.valid"></td><button (click)="moveBack()">Home</button>
+        </tr>
+
+    </table>
+</form>
+</div>

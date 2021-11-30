@@ -1,0 +1,106 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <style>
+                .button {
+                  background-color: #009879;
+                  border: none;
+                  color: white;
+                  padding: 10px 20px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 12px;
+                  margin: 2px 2px;
+                  cursor: pointer;
+                  
+          
+                }
+                </style>
+        </head>  
+        <br>
+    <button class="button" routerLink="/adminPage">Back</button>    
+    <br> 
+        <body>
+           
+        <div class="container">
+    <table class="table table-bordered" *ngIf="myData && myData.length">
+        <thead>
+            <tr>
+                <th>RouteNo </th>
+               
+                <th>Boarding</th>
+                <th>Dropping</th>
+                <th>Distance</th>
+                <th>StartTime</th>
+                <th>EndTime</th>
+                <th>Fare</th>
+                <th>Total Seats</th>
+
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let br of myData">
+                    <td>{{ br.routeNo }}</td>
+                    
+                    <td>{{ br.boarding}}</td>
+
+                    <td>{{ br.dropping}}</td>
+                    
+                    <td>{{ br.distance}}</td>
+
+                    <td>{{ br.startTime}}</td>
+                    <td>{{ br.endTime}}</td>
+                    <td>{{ br.fare}}</td>
+
+                    <td>{{ br.totalSeats}}</td>
+                   
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <p>get-all-bus-route works!</p>
+    <html lang="en">
+    <p>view-reservations works!</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+ 
+<body>
+    <div class="container">
+        <p style="background-color: black; color: white; font-size: 20px">Reservations</p> <br>
+        <p style="background-color: black; color: white; font-size: 20px"><input type=text placeHolder="Search By Ticket Number" name=d1 [(ngModel)]="ticketNo" (ngModelChange)="updateReservationsArray()"></p> <br>
+        {{ticketNo}
+    </div>
+-->

@@ -1,0 +1,20 @@
+<h1>New Contact</h1>
+<div class=container>
+<form #contactForm="ngForm" (ngSubmit)="submitContact(contactForm)">
+    <table>
+        <tr>
+            <td>First Name</td><td><input type="text" name="fname" ngModel required></td>
+        </tr>
+        <tr>
+            <td>Last Name</td><td><input type="text" name="lname" ngModel required></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td><td><input type="number" name="phone" ngModel required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Save" [disabled]="!contactForm.valid"></td><button (click)="moveBack()">Cancel</button>
+        </tr>
+
+    </table>
+</form>
+</div>

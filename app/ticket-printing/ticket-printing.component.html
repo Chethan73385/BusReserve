@@ -1,0 +1,54 @@
+<head>
+    <title>Login</title>
+    <head>
+      <style>
+        .button {
+          background-color: #009879;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 2px 2px;
+          cursor: pointer;
+          margin: auto;
+          display: block;
+         
+        }
+        </style>
+    </head>
+  </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<table class="w3-table w3-bordered w3-striped">
+    <tr class="w3-teal">
+  
+  <h3>Thank you For Your Reservation</h3>
+      <th>Print Ticket</th>
+      <th></th>
+    </tr>
+    <tr>
+    BusNumber
+    <td>{{busNumber}}</td>
+    </tr>
+    <tr>
+        Boarding
+        <td>{{boarding}}</td>
+        </tr>
+        <tr>
+            Dropping
+            <td>{{dropping}}</td>
+            </tr>
+            <tr>
+                JourneyDate
+                <td>{{journeyDate}}</td>
+                </tr>
+                <tr>
+                    SeatNo
+                    <td>{{seatNo}}</td>
+                    </tr>
+                    <button (click)="ticketPrint()" class="button" >Print</button>
+                   
+  </table>

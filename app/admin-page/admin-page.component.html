@@ -1,0 +1,181 @@
+
+
+
+<head>
+    <style>
+      .button {
+        background-color: #009879;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 2px;
+        cursor: pointer;
+        margin: auto;
+        display:block;
+
+      }
+      .button1 {
+        background-color: #009879;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 2px;
+        cursor: pointer;
+        
+
+      }
+      </style>
+  </head>
+  
+  <br>
+  <br>
+  <button class="button1"  routerLink="/adminLogin"  >Logout</button><br>
+  <br>
+
+  <div class = "container">
+    <div class = "row">
+        <div class ="col-10">
+            <div class = "jumbotron">
+<div id="continue-login">	
+    <div id="continue">
+<button class="button"  routerLink="/getAllReservation"  >GetAllReservation</button><br>
+<button class="button"  routerLink="/getAllBusRoute"  >GetAllBusRoute</button><br>
+<button class="button"  routerLink="/addBusType"  >AddBusType</button><br>
+<button class="button"  routerLink="/addBusRoute"  >AddBusRoute</button>	
+    </div>
+    <router-outlet></router-outlet>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<button class="button"  (click)="getAllreservation()"  >GetAllReservation</button>
+<button class="button" (click)="getAllBusRoute()"  >GetAllBusRoute</button>-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!--div class="container">
+    <table class="table table-bordered" *ngIf="myData && myData.length">
+        <thead>
+            <tr>
+                <th>Ticket Number </th>
+                <th>Booking Date </th>
+                <th>Journey Date </th>
+
+                <th>Seat Number </th>
+               
+                <th>Ticket Status </th>
+
+                <th>Cancel At  </th>
+                <th>Refund</th>
+                <th>Reschedule Date</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let res of myData">
+                    <td>{{ res.ticketNo }}</td>
+                    <td>{{ res.bookingDate}}</td>
+                    <td>{{ res.journeyDate}}</td>
+
+                    <td>{{ res.seatNo}}</td>
+                    
+                    <td>{{ res.ticketStatus}}</td>
+
+                    <td>{{ res.cancellationDate}}</td>
+                    <td>{{ res.refund}}</td>
+                    <td>{{ res.rescheduleDate}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+<!--<div class="container">
+    <table class="table table-bordered" *ngIf="myData && myData.length">
+        <thead>
+            <tr>
+                <th>RouteNo </th>
+               
+                <th>Boarding</th>
+                <th>Dropping</th>
+                <th>Distance</th>
+                <th>StartTime</th>
+                <th>EndTime</th>
+                <th>Fare</th>
+                <th>Total Seats</th>
+
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let br of myData">
+                    <td>{{ br.routeNo }}</td>
+                    
+                    <td>{{ br.boarding}}</td>
+
+                    <td>{{ br.dropping}}</td>
+                    
+                    <td>{{ br.distance}}</td>
+
+                    <td>{{ br.startTime}}</td>
+                    <td>{{ br.endTime}}</td>
+                    <td>{{ br.fare}}</td>
+
+                    <td>{{ br.totalSeats}}</td>
+                   
+            </tr>
+        </tbody>
+    </table>
+</div>-->

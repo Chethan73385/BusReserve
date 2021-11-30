@@ -1,0 +1,34 @@
+<h1>Phone Book App</h1>
+<div class=container>
+<div class=topmenu>
+<b>Contacts</b><Button (click)="toNewContact()">Add Contact</Button><br>
+</div>
+
+<div class="ind">
+    <input type="text" [(ngModel)]="search" placeholder="Search for contact from last name">
+</div>
+
+<div>
+<table class="tbl">
+    <tr *ngFor="let c of contactArray; let i=index">
+    <div *ngIf="search==''" class="intbl">
+        <td>
+            <tr style="width: auto;">{{c.fname}} {{c.lname}}</tr><tr>{{c.phone}}</tr>
+        </td>
+        <td><button (click)="delContact(i)" style="margin-left: 10px;">Delete</button></td>
+        <td><a [routerLink]="['editContact', c.phone]" style="margin-left: 10px;">Edit</a></td>
+    </div>
+    
+    <div *ngIf="search==c.lname">
+        <td>
+            <tr>{{c.fname}} {{c.lname}}</tr><tr>{{c.phone}}</tr>
+        </td>
+        <td><button (click)="delContact(i)">Delete</button></td>
+        <td><a [routerLink]="['editContact', c.phone]">Edit</a></td>
+    </div>
+    </tr>
+    
+</table>
+</div>
+
+</div>

@@ -1,0 +1,60 @@
+ 
+  <html>
+    <head>
+      <title>Login</title>
+      <head>
+        <style>
+          .button {
+            background-color: #009879;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 2px 2px;
+            cursor: pointer;
+           
+          }
+          </style>
+      </head>
+    </head>
+  
+    <body >
+      <button class="button" routerLink="/checkUser"  type="submit" >Back</button> 
+     
+      <br>
+      <br>
+      <br>      
+             
+            <form action="" method="">
+             
+              <table class="center" >
+                <th><h3>Sign In</h3></th>
+                 <tr>
+                     <td>Email address</td>
+                     <td>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]=userLogin.email>
+                      
+                   </td>
+                 </tr>
+                 <tr>
+                    <td>Password</td>
+                    <td>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" [(ngModel)]=userLogin.password>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                      <button  routerLink="/seatSelection"  class="button"   cursor="" type="submit" (click)="userLoginClick()" >Submit</button> 
+                    </td>
+                  </tr>
+                 
+  
+             </table>
+             </form>
+      </body>
+    <router-outlet></router-outlet>
+  
+  </html>

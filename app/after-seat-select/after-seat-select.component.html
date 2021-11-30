@@ -1,0 +1,106 @@
+<head>
+    <style>
+      .button {
+        background-color: #009879;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 2px;
+        cursor: pointer;
+        
+      }
+      </style>
+  </head>
+<br>
+<button class="button" routerLink="/seatSelection">Back</button>
+<br>
+<br>
+<table class="styled-table" >
+    <thead>
+        
+        <tr>
+            <th>Bus Number</th>
+            <th>Boarding</th>
+            <th>Dropping</th>
+            <th>JourneyDate</th>
+            <th>StartTime</th>
+            <th>EndTime</th>
+            <th>Seat No</th>
+            <th>Fare</th>
+         </tr>
+        </thead>
+         <tbody>
+             <tr>
+                 <td>{{busNumber}}</td>
+                 <td>{{boarding}}</td>
+                 <td>{{dropping}}</td>
+                 <td>{{journeyDate}}</td>
+                 <td>{{startTime}}</td>
+                 <td>{{endTime}}</td>
+                 <td>{{seatNo}}</td>
+                 <td>{{fare}}</td>
+             </tr>
+             <button routerLink="/homePage" class="button">Cancel</button>
+            <button routerLink="/paymentPortal" class="button"  type="submit" >Proceed to Payment</button>
+         </tbody>
+    
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div id="ticket-details">
+    <div id="details">
+        <h2>Ticket Details</h2>
+        <div id="print-details">
+            <h3>Bus Number :- {{busNumber}}</h3>
+            <h3>Boarding :- {{boarding}}</h3>
+            <h3>Dropping :- {{dropping}}</h3>
+            <h3>JourneyDate :- {{journeyDate}}</h3>
+            <h3>StartTime :- {{startTime}}</h3>
+            <h3>EndTime :- {{endTime}}</h3>
+            <h3>Seat No :- {{seatNo}}</h3>
+            <h3>Fare :- {{fare}}</h3>
+        </div>	
+    </div>
+</div>
+<div id="proceed-button">
+    <div id="proceed">
+        <button routerLink="/">Cancel</button>
+        <button >Proceed to Payment</button>
+    </div>
+</div>-->

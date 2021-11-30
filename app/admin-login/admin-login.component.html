@@ -1,0 +1,107 @@
+
+  <html>
+    
+      <title>Login</title>
+      <head>
+        <style>
+          .button {
+            background-color: #009879;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 2px 2px;
+            cursor: pointer;
+          }
+          </style>
+      </head>
+  
+  
+    <body>
+      <br>
+      <br>
+      
+             <h3>Admin Sign In</h3>
+             
+             <form action="" method="">
+             
+              <table class="center">
+                 <tr>
+                     <td>Email address</td>
+                     <td>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email" >
+                     
+                   </td>
+                 </tr>
+                 <tr>
+                    <td>Password</td>
+                    <td>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" >
+                    </td>
+                 </tr>
+                
+                
+                  
+                  <tr>
+                    <td>
+                      <button  class="button" cursor="" type="submit" (click)="adminLoginClick()">Submit</button> 
+                    </td>
+                  </tr>
+               
+      </table>
+      </form>
+    </body>
+    <router-outlet></router-outlet>
+  
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<p>admin-login works!</p>
+<button class="button" [routerLink]="['/adminPage']"  >AdminPage</button>
+<form class="" style="padding: 25% ;">
+    <fieldset>
+      <legend style="position:static;">Admin-Sign-In</legend>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+         </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" >
+      </div> 
+      <button [routerLink]="['/adminPage']" type="submit" class="btn btn-primary"  (click)="adminLoginClick()">Login</button>
+    </fieldset>
+  </form>
+  -->

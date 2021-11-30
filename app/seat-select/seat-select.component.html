@@ -1,0 +1,89 @@
+<head>
+  <style>
+    .button {
+      background-color: #009879;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  
+    <br>
+    <br>
+   <div class="center" style="align-self: center;">
+    <h3 style="color:  #009879;">Choose Your Seat Here</h3>
+    <select name="seat-select" id="seat"  class="custom-select" style="width: 210px; margin-left: 5px;"   [(ngModel)]="seatNumber">
+      <option value="-1">Select Your Seat  </option>
+      <option value="1" >1</option>
+      <option value="2" >2</option>
+      <option value="3" >3</option>
+      <option value="4" >4</option>
+      <option value="5" >5</option>
+  </select>
+  <br><br>
+      <div id="proceed-button">
+      <button class="button" routerLink="/homePage">Cancel</button>
+      <button class="button" routerLink="/afterseatSelection" (click)="addReservation()" >Proceed</button>
+    </div>
+  </div> 
+    <router-outlet></router-outlet>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ <!--<p>seat-select works!</p>
+<p>Welcome to seat-select</p>-->
+    <!--<table>
+      <th>CLICK HERE TO FIND UNAVAILABLE SEATS</th>
+      <tr *ngFor="let c of bookdedSeat">
+      <td>{{c}}</td>
+    </table>
+    <input type="submit" (click)=" findTickets()" value="Occupied Seats">-->
+    <!--<h2 id="heading"><u>Select Your Seat</u></h2>
+    <div >
+      Seat Number for your booking<br><input type="text" name="seatNumber" [(ngModel)]="seatNumber">-->
+      
